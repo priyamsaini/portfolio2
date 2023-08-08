@@ -44,9 +44,28 @@ html {
     justify-content: center;
     align-items: center;
 }
+.project-img-div button{
+    margin-block: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #373737;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    display: inline-block;
+}
+.project-img-div a{
+    text-decoration: none;
+    color: #fff;
+}
+.project-img-div button:hover{
+    cursor: pointer;
+    background: #6b6b6b;
+}
 .project-image{
     margin: 15px;
-    max-width: 90%;
+    width: 90%;
     height: auto;
 }
 .project-container p {
