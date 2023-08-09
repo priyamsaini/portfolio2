@@ -7,10 +7,9 @@ export function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav>
+        <nav className="navbar">
             <Link to="/" className="title">
-                {/* <img className="logo" src="./images/logo.png" /> */}
-                Priyam
+                <img className="logo" src="./images/logo.png" />
             </Link>
             <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>

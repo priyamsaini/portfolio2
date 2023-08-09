@@ -6,11 +6,11 @@ import Footer from '../components/Footer';
 const Home = () => {
     return (
         <>
-            <div>
-                <Navbar />
+            <div className='home-content'>
+            <Navbar />
                 <div className='info-content'>
                     <div className='home-header'>
-                        <h1>Hi, I'm PRIYAM</h1><br />
+                        <h1>Hi, I'm <span>PRIYAM</span></h1><br />
                         <h2>Yamunanagar, HR </h2>
                     </div>
                 </div>

@@ -1,33 +1,46 @@
+.home-content{
+    position: relative;
+}
 .info-content {
     /* background: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=400); */
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Q4QQA0o2JjJ4MguUBAlsvLhWBU01elXY2g&usqp=CAU);
     background-position: center;
     background-size: cover;
+    position: sticky;
+    top: 0;
 }
 .home-header{
     height: 100vh;
     padding: 18%;
+    color: white;
     font-size: 2.5rem;
+}
+.home-header h1 span {
+    color: silver;
 }
 
 .about-content {
-    margin-top: 20px;
+    position: relative;
+    background: #faf9f6;
+    z-index: 1;
+    padding: 5%;
     height: 100vh;
     text-align: center;
 }
-
+.about-content h2{
+    font-weight: 600;
+}
 .grid-container {
     display: inline-grid;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     grid-template-columns: 350px 650px;
     justify-content: space-around;
     align-items: center;
     margin: 10px;
-    padding: 20px;
 }
 
 .container {
-    margin: 5px;
-    padding: 10px;
+    padding: 5%;
 }
 
 .container img {
@@ -55,7 +68,10 @@
     color: #fff;
 }
 .container a:hover{
-    background: #6b6b6b;
+    color: #6b6b6b;
+    background: white;
+    border: 1px solid;
+    transition: .2s;
 }
 
 .container p {
@@ -71,8 +87,11 @@
     }
     .grid-container {
         display:block;
+        margin: 0px;
     }
     .about-content{
         height: 100%;
+        margin-top: 10px;
+        margin-inline: 2px;
     }
 }
