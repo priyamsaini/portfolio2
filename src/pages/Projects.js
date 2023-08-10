@@ -10,20 +10,35 @@ const Projects = () => {
     <Navbar />
     <div className='projects'>
       <h2>Projects</h2>
+      <div className='inner-project'>
       <div className='projects-container'>
         <div className='project-1'>
           <div className='project-container'>
             <div className='project-img-div'>
-            <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} centerMode centerSlidePercentage={100}>
-              <img src='./images/project1.1.png' className='project-image' />
-              <img src='./images/project1.2.png' className='project-image' />
-              <img src='./images/project1.3.png' className='project-image' />
-              <img src='./images/project1.4.png' className='project-image' />
-              <img src='./images/project1.5.png' className='project-image' />
-              </Carousel>
-              <button><a href="https://github.com/priyamsaini/Keeper-App" target='_blank'>Code</a></button>
-              <button><a href='https://priyamsaini.github.io/Keeper-App/' target='_blank'>Preview</a></button>
+            {/* <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} centerMode centerSlidePercentage={100}>
+            <div className='project-image'>
+            <img src='./images/project1.1.png'/>
             </div>
+            <div className='project-image'>
+            <img src='./images/project1.2.png'/>
+            </div>
+            <div className='project-image'>
+            <img src='./images/project1.3.png'/>
+            </div>
+            <div className='project-image'>
+            <img src='./images/project1.4.png'/>
+            </div>
+            <div className='project-image'>
+            <img src='./images/project1.5.png'/>
+            </div>
+              </Carousel> */}
+              <div className='project-image'>
+            <img src='./images/project1.4.png'/>
+            </div>
+              <button><a href="https://github.com/priyamsaini/Keeper-App" target='_blank'>Code</a></button>
+              <button><a href='https://priyamsaini.github.io/Keeper-App/' target='_blank'>Preview</a></button>  
+            </div>
+            
             <p><h4>Keeper App</h4><br /><b>Introduction:</b> The Keeper App with MySQL Integration is a modern web application designed to help users organize, store, and manage their notes effectively. The app is built using the React JavaScript library for the frontend and MySQL as the backend database to store, delete and retrieve user-generated notes. The app aims to provide a seamless and user-friendly experience for capturing, editing, and accessing notes across different devices.<br/>
               <br/><b>Key Features:</b><br/><br/>
               <em>1. Create and Edit Notes:</em> Users can create new notes with a title and content, and they have the flexibility to delete their notes at any time.<br/><br/>
@@ -43,14 +58,17 @@ const Projects = () => {
         <div className='project-2'>
           <div className='project-container'>
           <div className='project-img-div'>
-          <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} centerMode centerSlidePercentage={100}>
+          {/* <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} centerMode centerSlidePercentage={100}>
               <img src='./images/project2.1.jpg' className='project-image' />
               <img src='./images/project2.2.jpg' className='project-image' />
               <img src='./images/project2.3.jpg' className='project-image' />
               <img src='./images/project2.4.jpg' className='project-image' />
               <img src='./images/project2.5.jpg' className='project-image' />
               <img src='./images/project2.6.jpg' className='project-image' />
-              </Carousel>
+              </Carousel> */}
+              <div className='project-image'>
+            <img src='./images/project2.3.jpg'/>
+            </div>
               <button><a href="https://github.com/priyamsaini/flutter_app" target='_blank'>Code</a></button>
               <button><a href='https://user-images.githubusercontent.com/40400546/259059490-136c87e9-91d2-4d90-aec5-e3e5a8f3f0e7.mp4' target='_blank'>Preview</a></button>
             </div>
@@ -69,8 +87,9 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      </div>
+      <Footer />
     </div>
-    <Footer />
     </>
   )
 }

@@ -15,13 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* #####################   HOME PAGE   ################### */
-
-
-
-/* #######################     FOOTER      ######################### */
-
-
 /* ######################      PROJECTS PAGE      ###################### */
 
 .projects h2 {
@@ -72,13 +65,20 @@ html {
 }
 
 .project-img-div {
-    padding-inline: 10px;
+    display: block;
+    margin: 5%;
+    padding: 5%;
 }
 
 .project-image {
-    padding: 15px;
-    width: 90%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
+}
+.project-img-div img{
+    height: auto;
+    width: 100%;
 }
 
 .project-container p {
@@ -209,10 +209,11 @@ html {
 }
 
 @keyframes moveline {
-    0%{
+    0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
@@ -255,29 +256,47 @@ html {
     text-align: start;
 }
 
-
 /* ***********************MOBILE RESPONSIVE ****************** */
 
 @media only screen and (max-width: 560px) {
-    .projects {
-        padding: 10%;
-    }
 
     .project-container {
         display: block;
-        padding: 10%;
     }
 
+    .projects-container{
+        padding: 5px;
+    }
+    .project-img-div {
+        display: block;
+    }
+    
     .project-container p {
-        padding-inline: 25px;
+        padding-inline: 5px;
     }
 
     .timeline {
-        margin: 15%;
+        margin: 20%;
     }
 
     .timeline-container span {
         margin: -4px;
+    }
+    
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-header ul li a {
+        margin-inline: 10px;
+    }
+    
+    .contact-body {
+        margin-inline: 0%;
+    }
+    
+    .map-container {
+        padding: 10px;
     }
 
 }
