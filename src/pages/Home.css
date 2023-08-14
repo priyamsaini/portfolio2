@@ -6,7 +6,7 @@
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Q4QQA0o2JjJ4MguUBAlsvLhWBU01elXY2g&usqp=CAU);
     background-position: center;
     background-size: cover;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 .home-header{
@@ -33,7 +33,7 @@
 .grid-container {
     display: inline-grid;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    grid-template-columns: 350px 650px;
+    grid-template-columns: 1fr 2fr;
     justify-content: space-around;
     align-items: center;
     margin: 10px;
