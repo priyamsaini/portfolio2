@@ -1,20 +1,22 @@
-.home-content{
+.home-content {
     position: relative;
 }
+
 .info-content {
-    /* background: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=400); */
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Q4QQA0o2JjJ4MguUBAlsvLhWBU01elXY2g&usqp=CAU);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/public/images/background.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     /* position: sticky; */
-    top: 0;
 }
-.home-header{
+
+.home-header {
     height: 100vh;
     padding: 18%;
     color: white;
     font-size: 2.5rem;
 }
+
 .home-header h1 span {
     color: silver;
 }
@@ -24,39 +26,45 @@
     background: #faf9f6;
     z-index: 1;
     padding: 5%;
-    height: 100vh;
     text-align: center;
 }
-.about-content h2{
+
+.about-content h2 {
     font-weight: 600;
 }
+
 .grid-container {
-    display: inline-grid;
+    display: flex;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    grid-template-columns: 1fr 2fr;
     justify-content: space-around;
     align-items: center;
     margin: 10px;
 }
 
-.container {
+.container1{
+    flex-basis: 40%;
+    padding: 5%;
+}
+.container2{
+    flex-basis: 60%;
     padding: 5%;
 }
 
-.container img {
+.resume-container img {
     height: 250px;
     width: 250px;
     border-radius: 100%;
 }
 
 .resume-container {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
-.container a {
+.container1 a {
     width: 200px;
     background: #373737;
     margin: auto;
@@ -67,40 +75,58 @@
     text-decoration: none;
     color: #fff;
 }
-.container a:hover{
+
+.container1 a:hover {
     color: #6b6b6b;
     background: white;
     border: 1px solid;
     transition: .2s;
 }
 
-.container p {
+.container2 p {
     padding: 10px;
     text-align: justify;
     line-height: 1.3;
 }
 
-@media (max-width: 480px){
-    .home-header{
+@media (max-width: 480px) {
+
+    .info-content{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/public/images/phone-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .home-header {
         padding: 10%;
         font-size: 1.5rem;
     }
+
     .home-header h1 {
         margin-top: 50%;
     }
+
     .grid-container {
-        display:block;
+        display: block;
         margin: 0px;
     }
-    .about-content{
-        height: 100%;
+
+    .about-content {
         margin-top: 10px;
         padding: 10px;
     }
-    .grid-container{
+
+    .grid-container {
         padding: 0;
     }
-    .container{
+
+    .container {
         padding: 5px;
+    }
+}
+
+@media (max-width:767px){
+    .grid-container{
+        display: block;
     }
 }

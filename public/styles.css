@@ -17,85 +17,6 @@ html {
 
 /* ######################      PROJECTS PAGE      ###################### */
 
-.projects h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.projects-container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
-
-.project-container {
-    display: inline-grid;
-    grid-template-columns: 40% 50%;
-    padding: 10px;
-    margin-block: 20px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 10px;
-}
-
-.project-img-div button {
-    margin-block: 10px;
-    margin-left: 20px;
-    font-size: 1rem;
-    color: #fff;
-    background: #373737;
-    border-radius: 5px;
-    padding: 5px;
-    border: none;
-    display: inline-block;
-}
-
-.project-img-div a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.project-img-div button:hover {
-    cursor: pointer;
-    background: #6b6b6b;
-}
-
-.project-img-div {
-    display: block;
-    margin: 5%;
-    padding: 5%;
-}
-
-.project-image {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-.project-img-div img{
-    height: auto;
-    width: 100%;
-}
-
-.project-container p {
-    text-align: justify;
-    line-height: 1.2;
-}
-
-.project-container em {
-    text-decoration: underline;
-}
-
-.project-container h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-}
-
 /* #####################       CONTACT PAGE    ##################### */
 
 .contact-header {
@@ -187,12 +108,13 @@ html {
 
 .skills h2 {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 10px;
     font-weight: 600;
 }
 
 .timeline {
     margin: 5%;
+    margin-bottom: 0;
     position: relative;
 }
 
@@ -260,21 +182,6 @@ html {
 
 @media only screen and (max-width: 560px) {
 
-    .project-container {
-        display: block;
-    }
-
-    .projects-container{
-        padding: 5px;
-    }
-    .project-img-div {
-        display: block;
-    }
-    
-    .project-container p {
-        padding-inline: 5px;
-    }
-
     .timeline {
         margin: 20%;
     }
@@ -282,19 +189,19 @@ html {
     .timeline-container span {
         margin: -4px;
     }
-    
+
     .contact-header h1 {
         font-size: 2.5rem;
     }
-    
+
     .contact-header ul li a {
         margin-inline: 10px;
     }
-    
+
     .contact-body {
         margin-inline: 0%;
     }
-    
+
     .map-container {
         padding: 10px;
     }

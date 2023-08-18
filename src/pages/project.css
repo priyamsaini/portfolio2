@@ -1,0 +1,92 @@
+
+.projects h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.projects-container {
+    padding: 25px;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-block: 40px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+}
+
+.project-img-div button {
+    margin-block: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #373737;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.project-img-div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-img-div button:hover {
+    cursor: pointer;
+    background: #6b6b6b;
+}
+
+.project-img-div {
+    flex-direction: column;
+    flex-basis: 40%;
+}
+.project-info-div{
+    flex-basis: 60%;
+}
+.project-img-div img {
+    width: 100%;
+}
+.project-container p {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.project-container em {
+    text-decoration: underline;
+}
+
+.project-container h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media only screen and (max-width: 560px) {
+
+    .project-container {
+        display: block;
+    }
+
+    .projects-container{
+        padding: 5px;
+    }
+    .project-img-div {
+        display: block;
+    }
+    
+    .project-container p {
+        padding-inline: 5px;
+    }
+}
+
+@media (max-width:767px) {
+    .project-container{
+        display:block
+    }
+}
