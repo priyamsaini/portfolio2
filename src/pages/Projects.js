@@ -1,14 +1,12 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import "./project.css";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <>
-    <Navbar />
     <div className='projects'>
       <h2>Projects</h2>
       <div className='projects-container'>

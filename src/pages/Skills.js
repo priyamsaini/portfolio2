@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react'
-import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
-const Skills = () => {
+const Skills = (props) => {
   useEffect(()=>{
     Aos.init({duration:1000});
   },[]);
   return (
     <>
-      <Navbar />
       <div className='skills'>
         <h2>Skills Timeline</h2>
         <div className='timeline'>

@@ -1,14 +1,12 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <>
-    <Navbar/>
+    <div className='contact'>
     <div className='contact-header'>
       <h1>You can reach me at<br/>below platforms </h1>
       <ul>
@@ -34,7 +32,7 @@ const Contact = () => {
       </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 

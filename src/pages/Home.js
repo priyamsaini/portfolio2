@@ -1,13 +1,12 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import "./Home.css";
 import Footer from '../components/Footer';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <>
             <div className='home-content'>
-            <Navbar />
+
                 <div className='info-content'>
                     <div className='home-header'>
                         <h1>Hi, I'm <span>PRIYAM</span></h1>
